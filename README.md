@@ -1,12 +1,5 @@
 # ☁️ Bluesky UUID Resolver
-
-![App Screenshot](https://github.com/pvrzz/bskyuuid/blob/main/preview.png?raw=true)
-
-
-
-
-Enter the handle of a user. No @, just the handle: (Example: username.bsky.social) for a UUID response.
-
+Resolve the UUID of any Bluesky user.
 Powered by Bluesky's API.
 
 ### ⚠️ Notice
@@ -14,8 +7,16 @@ This is to be used to assist you in filtering users from SkyFeed lists/feeds, an
 
 This project is not directly partnered/affiliated with Bluesky.
 
+### Usage
+Enter the handle of a user for a UUID Response.
+Custom domain example: website.com
+User example: user.bsky.social
+
 ### 🔗 Website 
 https://bsid.pvrz.lol/
 
 (via Cloudflare Pages) https://bskyuuid.pages.dev
 
+### 📸 Screenshot
+
+![App Screenshot](https://github.com/pvrzz/bskyuuid/blob/main/preview.png?raw=true)
