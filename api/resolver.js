@@ -1,14 +1,25 @@
 // resolver.js
 window.addEventListener('load', async () => {
     const urlParams = new URLSearchParams(window.location.search);
-    const handle = urlParams.get('handle');
+    const username = urlParams.get('handle');
 
-    if (!handle) {
+    if (!username) {
         window.location.href = '/?error=missing_handle';
         return;
     }
 
     try {
+        const handleUrl = `https://bsid.pvrz.lol/api/handle?handle=${username}`;
+        const handleResponse = await fetch(handleUrl);
+        const handleData = await handleResponse.json();
+
+        if (handleData.error) {
+            window.location.href = '/?error=invalid_handle';
+            return;
+        }
+
+        const handle = handleData.handle;
+
         const url = `https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle=${handle}`;
         const response = await fetch(url);
         const data = await response.json();
