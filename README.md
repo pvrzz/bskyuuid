@@ -1,5 +1,5 @@
 # Bluesky UUID Resolver
-Enter the handle of a user (no @, just handle) [ex: pvrz.lol] for the UUID response.
+Enter the handle of a user (no @, just handle) [ex: username.bsky.social] for the UUID response.
 Powered by Bluesky's API.
 
 
