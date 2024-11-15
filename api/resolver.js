@@ -4,7 +4,7 @@ window.addEventListener('load', async () => {
     const username = urlParams.get('handle');
 
     if (!username) {
-        window.location.href = '/?error=missing_handle';
+        document.body.innerHTML = JSON.stringify({ error: 'missing_handle' }, null, 2);
         return;
     }
 
@@ -14,7 +14,7 @@ window.addEventListener('load', async () => {
         const handleData = await handleResponse.json();
 
         if (handleData.error) {
-            window.location.href = '/?error=invalid_handle';
+            document.body.innerHTML = JSON.stringify({ error: 'invalid_handle' }, null, 2);
             return;
         }
 
@@ -25,18 +25,13 @@ window.addEventListener('load', async () => {
         const data = await response.json();
 
         if (data.error) {
-            window.location.href = '/?error=invalid_handle';
+            document.body.innerHTML = JSON.stringify({ error: 'invalid_handle' }, null, 2);
             return;
         }
 
-        if (data.did) {
-            window.location.href = `/result.html?uuid=${data.did}`;
-            return;
-        }
-
-        window.location.href = '/?error=not_found';
+        document.body.innerHTML = JSON.stringify(data, null, 2);
     } catch (error) {
         console.error('Error:', error);
-        window.location.href = '/?error=server_error';
+        document.body.innerHTML = JSON.stringify({ error: 'server_error' }, null, 2);
     }
 });
