@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluesky User UUID</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User UUID</h1>
+        <div id="uuidDisplay"></div>
+        <button onclick="goBack()">Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const uuid = new URLSearchParams(window.location.search).get('uuid');
+            document.getElementById('uuidDisplay').innerText = `User UUID: ${uuid}`;
+        });
+    </script>
+</body>
+</html>
