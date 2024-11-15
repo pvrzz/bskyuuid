@@ -7,7 +7,7 @@ This is to be used to assist you in filtering users from SkyFeed lists/feeds, an
 
 This project is not directly partnered/affiliated with Bluesky.
 
-### Usage
+### ❔ Usage
 Enter the handle of a user for a UUID Response.
 Custom domain example: website.com
 User example: user.bsky.social
