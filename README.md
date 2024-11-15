@@ -12,7 +12,7 @@ Enter the handle of a user for a UUID Response.
 Custom domain example: website.com
 User example: user.bsky.social
 
-### 🔗 Website 
+### 🔗  Website 
 https://bsid.pvrz.lol/
 
 (via Cloudflare Pages) https://bskyuuid.pages.dev
