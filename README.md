@@ -1,5 +1,4 @@
 # ☁️ Bluesky UUID Resolver
-![GitHub Repo stars](https://img.shields.io/github/stars/pvrzz/bskyuuid)
 
 ![App Screenshot](https://github.com/pvrzz/bskyuuid/blob/main/preview.png?raw=true)
 
