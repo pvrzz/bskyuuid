@@ -8,3 +8,4 @@ I do not permit any Bluesky TOS-violating usage of this tool. This is to be used
 
 #### Website:
 https://bsid.pvrz.lol/
+(via Cloudflare Pages) https://bskyuuid.pages.dev
