@@ -1,11 +1,7 @@
 # ☁️ Bluesky UUID Resolver
 Resolve the UUID of any Bluesky user.
 Powered by Bluesky's API.
-
-### ⚠️ Notice
-This is to be used to assist you in filtering users from SkyFeed lists/feeds, and for moderation.
-
-This project is not directly partnered/affiliated with Bluesky.
+Used for filtering users from SkyFeed lists/feeds, and for moderation.
 
 ### ❔ Usage
 Enter the handle of a user for a UUID Response.
